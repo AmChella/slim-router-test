@@ -1,0 +1,27 @@
+{
+    "name": "chella/routertest",
+    "description": "rest api test app",
+    "type": "project",
+    "require": {
+        "php": ">=7.2",
+        "router/slim": "dev-master",
+        "symfony/yaml": "^4.3",
+        "symfony/config": "3.2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chella S",
+            "email": "chellapandi.s@tnqsoftware.co.in"
+        }
+    ],
+    "minimum-stability": "dev",
+     "autoload": {
+        "psr-4": {
+          "RouterTest\\": "app/RouterTest"
+        }
+    },
+    "config": {
+        "secure-http": false
+    }
+}

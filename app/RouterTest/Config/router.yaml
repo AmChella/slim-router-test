@@ -1,0 +1,15 @@
+-
+    url: /test[/{return}]
+    method: get
+    routeBeforeInvoke: 
+        - 'testServe->middleWareOne'
+        - 'testServe->middleWareTwo'
+    invoke: testServe->testGet
+-
+    url: /test[/{return}]
+    method: post
+    invoke: testServe->testPost
+-
+    url: /test[/{return}]
+    method: put
+    invoke: testServe->testPut
